@@ -230,3 +230,77 @@ box-shadow: 0 0 10px #888;
 .spacer {
   min-height: 100vh;
 }
+
+.card-text {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    color: white;
+}
+
+ .cta-section {
+    background-color: #183b54;
+    padding: 120px var(--padding-inline-section) 80px;
+ }
+
+.cta-section-container {
+    flex-direction: column;
+    gap: 30px;
+    color: white;
+    text-align: center;
+}
+
+.cta-section h2 {
+    color: white;
+    text-align: center;
+    margin-top: 5px;
+}
+.cta-section p {
+    color: rgb(255, 255, 255);
+    margin-top: 20px;
+    text-align: center;
+}
+
+.cta-section button{
+    background-color: var(--accent-color);
+    
+}
+
+
+ footer {
+    padding-block: 80px;
+    background-color: #ebf2fa;
+ }
+
+.link-column {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.footer-container {
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+
+.sub-footer {
+    background-color: #b9cde4;
+    padding: var(--padding-inline-section);
+    text-align: center;
+}
+
+.sub-footer p{
+    font-size: 18px;
+    font-weight: 900;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 5px;
+    color: var(--accent-color-dark);
+}
+
+.sub-footer-container {
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
