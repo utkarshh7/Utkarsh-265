@@ -238,69 +238,61 @@ box-shadow: 0 0 10px #888;
     right: 20px;
     color: white;
 }
-
- .cta-section {
-    background-color: #183b54;
-    padding: 120px var(--padding-inline-section) 80px;
- }
-
-.cta-section-container {
-    flex-direction: column;
-    gap: 30px;
-    color: white;
-    text-align: center;
+.cta-section {
+  background-color: #183b54;
+  padding: 120px var(--padding-inline-section) 80px;
+}
+.cta-container {
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  gap: 30px;
+}
+.cta-container p {
+  color: white;
+  margin-top: 30px;
 }
 
-.cta-section h2 {
-    color: white;
-    text-align: center;
-    margin-top: 5px;
-}
-.cta-section p {
-    color: rgb(255, 255, 255);
-    margin-top: 20px;
-    text-align: center;
+.cta-container a{
+  background-color: #ebf2fa;
 }
 
-.cta-section button{
-    background-color: var(--accent-color);
-    
+.cta-container a:hover{
+  font-size: 18px;
 }
-
-
- footer {
-    padding-block: 80px;
-    background-color: #ebf2fa;
- }
-
-.link-column {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 20px;
+footer {
+  padding-block: 80px;
+  background-color: #ebf2fa;
 }
-
 .footer-container {
-    align-items: flex-start;
-    justify-content: space-between;
+  align-items: start;
+  justify-content: space-between;
 }
 
-
-.sub-footer {
-    background-color: #b9cde4;
-    padding: var(--padding-inline-section);
-    text-align: center;
+.footer-container image{
+  width: 200px;
+}
+.link-column {
+  flex-direction: column;
+  gap: 20px;
+}
+.link-column a {
+  color: #183b54;
+}
+.link-column a:hover {
+  color: var(--accent-color-dark);
+}
+.subfooter {
+  background-color: #b9cde4;
+  text-align: center;
 }
 
-.sub-footer p{
-    font-size: 18px;
-    font-weight: 900;
-    font-family: 'Times New Roman', Times, serif;
-    margin-bottom: 5px;
-    color: var(--accent-color-dark);
+.subfooter-container {
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+  padding: var(--padding-inline-section);
 }
-
-.sub-footer-container {
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
+.spacer {
+  min-height: 50vh;
 }
