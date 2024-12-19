@@ -1,0 +1,83 @@
+.container{
+    overflow:hidden;
+}
+.nav-toggle{
+    display:none;
+}
+.example-card{
+    height:300px;
+}
+@media screen and (max-width:991px){
+    .nav-toggle{
+    display:block;
+    margin-right:20px;
+    }
+    .nav-links {
+        display:none;
+    }
+    .example-area{
+        flex-wrap:wrap;
+        gap:20px;
+    }
+    .example-card{
+        width:calc(50% - 10px); 
+        height:100px;
+    }
+    .logos{
+        justify-content: space-evenly;
+    }
+}
+@media screen and (max-width:767px){
+    .header-section{
+        flex-direction: column-reverse;
+    }
+    .header-left{
+        width:100%;
+    }
+    .primary-button{
+        width:100%;
+        text-align: center;
+    }
+    .header-right img{
+        width:100%;
+    }
+    .big-feature-container{
+        flex-direction: column;
+    }   
+    #spl-cont{
+        flex-direction: column-reverse;
+    }
+    .big-feature-container{
+        flex-direction: column;
+    }
+    .footer-container{
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+    .link-column{
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    h1{
+        font-size: 2rem;
+    }
+    h2{
+        font-size: 1rem;
+    }
+    h3{
+        font-size: 1.2rem;
+    }
+    :root{
+        --padding-inline-section: 8px;
+    }
+    .feature-card{
+        min-width: 100%;
+        margin-block: 20px;
+    }
+    .example-card{
+        width: 100%;
+    }
+}
