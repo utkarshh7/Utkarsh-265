@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Example</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form">
+        <fieldset>
+            <legend>Email</legend>
+            <input type="email" id="email">
+        </fieldset>
+        
+        <fieldset>
+            <legend>Password</legend>
+            <div class="password-container">
+                <input type="password" id="password">
+                <button type="button" id="togglePassword">
+                    <span id="eyeIcon">👁</span>
+                </button>
+            </div>
+        </fieldset>
+        
+        <button type="submit">Login</button>
+    </div>
+
+    <script>
+        const passwordInput = document.getElementById("password");
+        const togglePassword = document.getElementById("togglePassword");
+        const eyeIcon = document.getElementById("eyeIcon");
+
+        togglePassword.addEventListener("click", () => {
+
+            const type = passwordInput.type === "password" ? "text" : "password";
+            passwordInput.type = type;
+
+            eyeIcon.textContent = passwordInput.type === "password" ? "👁" : "🙈";
+        });
+    </script>
+</body>
+</html>
