@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Example</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form">
+        <form action="">
+
+            <h2>Sign Up</h2>
+            <fieldset>
+                <legend>Email</legend>
+                <input type="email" id="email">
+            </fieldset>
+            
+            <fieldset>
+                <legend>Password</legend>
+                <div class="password-container">
+                    <input type="password" id="password">
+                    <button type="button" id="togglePassword">
+                        <span id="eyeIcon">👁</span>
+                    </button>
+                </div>
+            </fieldset>
+            
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
