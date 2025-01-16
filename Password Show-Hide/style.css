@@ -19,10 +19,6 @@ body {
     align-items: center;
 }
 
-input {
-    width: 200px;
-}
-
 .password-container {
     position: relative;
     width: 200px;
